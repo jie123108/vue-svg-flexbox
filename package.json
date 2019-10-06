@@ -15,7 +15,6 @@
     "layout"
   ],
   "files": [
-    "src",
     "dist"
   ],
   "main": "dist/vue-svg-flexbox.umd.js",
@@ -29,7 +28,8 @@
     "test": "jest --verbose",
     "doc": "vue-styleguidist build",
     "start": "start-storybook -p 9009",
-    "build": "npm run build:unpkg & npm run build:es & npm run build:umd & npm run doc",
+    "build-storybook": "build-storybook -c .storybook -o docs",
+    "build": "npm run build:unpkg & npm run build:es & npm run build:umd & npm run build-storybook",
     "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-svg-flexbox.umd.js",
     "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-svg-flexbox.esm.js",
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-svg-flexbox.min.js",

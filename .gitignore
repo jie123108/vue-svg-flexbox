@@ -5,7 +5,6 @@ yarn-debug.log*
 yarn-error.log*
 dist
 docs/build
-docs/index.html
 docs/*.woff
 docs/*.ttf
 
